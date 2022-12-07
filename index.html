@@ -13,7 +13,29 @@
         <div id="heart-left"></div>
     </div>
     <script src="script.js" async defer></script>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCnY_qU2DM03UnMXChkXsPT9GriUMLsmT0",
+    authDomain: "heartbeat-8d860.firebaseapp.com",
+    projectId: "heartbeat-8d860",
+    storageBucket: "heartbeat-8d860.appspot.com",
+    messagingSenderId: "75165348926",
+    appId: "1:75165348926:web:691d5393b9eb892c814d6f",
+    measurementId: "G-1F8WTCJW86"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 
 </html>
